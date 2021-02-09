@@ -1,0 +1,62 @@
+.container{
+    width: 40%;
+    margin: 200px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+}
+.allItems{
+    width: 100%;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#badWord{
+    width: 65%;
+    border-radius: 5px;
+    border: 1px solid gainsboro;
+}
+.buttons{
+    width: 15%;
+    border: 1px solid gray;
+    border-radius: 5px;
+}
+#text{
+    width: 99%;
+    resize: none;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+#cenzor{
+    width: 100%;
+    background-color: rgb(94, 205, 50);
+}
+button{
+    border: 1px solid gray;
+    border-radius: 5px;
+}
+.alertInvisible{
+    width: 35%;
+    height: 110px;
+    border: 1px solid red;
+    border-radius: 7px;
+    padding: 10px;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 40%;
+    left: 32%;
+    background-color: white;
+    visibility: hidden;    
+}
+
+.mainTextName{
+    width: 100%;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: flex-start;
+}

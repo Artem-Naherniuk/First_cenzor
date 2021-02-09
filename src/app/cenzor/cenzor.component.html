@@ -1,0 +1,21 @@
+
+    <div class="container" [style.opacity]="!isActiveAlert ? '1' : '0.4'">
+        <div class="mainTextName">
+            <span id="textName"><b>Bad words:</b></span>
+            <span id="badWordText" [style.color]="'red'">{{allBadWords}}</span>
+        </div>
+        <form name="frm" class="allItems" [style]="wAmb">
+            <input id="badWord" type="text" [(ngModel)]="badWord" name="badWord"  placeholder="Write bad word" >
+            <input type="button" class="buttons" id="add" name="add" [style.background-color]="'orange'" value="Add" (click)="add()">
+            <input type="button" class="buttons" id="reset" name="reset" [style.background-color]="'orangered'" value="Reset" (click)="reset()">
+        </form>
+        <form name="frmTwo" style="width: 100%;">
+            <textarea id="text" [(ngModel)]="mainText" name="mainText" cols="30" rows="10"></textarea>
+            <input type="button" class="buttons" id="cenzor" value="cenzor" (click)="cenzor()">
+        </form>
+    </div>
+
+    <div class="alertInvisible" id="alert" [style.visibility]="!isActiveAlert ? 'hidden' : 'visible'">
+        <span id="alertText" style="margin-bottom: 10px;">{{alertText}}</span>
+        <button id="close" (click)="close()">close</button>
+    </div>
