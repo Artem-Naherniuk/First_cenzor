@@ -53,9 +53,7 @@ export class CenzorComponent implements OnInit {
   reset(): void {
     this.allBadWords = '';
     this.badWord = '';
-    this.words = [];
-    console.log(this.words);
-    
+    this.words = [];    
   }
 
   close(): void {
